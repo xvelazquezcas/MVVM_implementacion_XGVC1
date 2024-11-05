@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM_implementacion_XGVC1.Vistas;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,8 @@ namespace MVVM_implementacion_XGVC1
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            
+            MainPage = new Pagina1();
         }
 
         protected override void OnStart()
