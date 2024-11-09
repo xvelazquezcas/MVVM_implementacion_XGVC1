@@ -10,8 +10,8 @@ namespace MVVM_implementacion_XGVC1
         public App()
         {
             InitializeComponent();
-            
-            MainPage = new Pagina1();
+
+            MainPage = new NavigationPage(new Pagina1());
         }
 
         protected override void OnStart()
