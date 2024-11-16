@@ -55,10 +55,15 @@ namespace MVVM_implementacion_XGVC1.VistaModelo
                }
             };
         }
+        public async Task Alerta(Musuarios parametros)
+        {
+            await DisplayAlert("Titulo", parametros.Nombre, "Okeyys");
+        }
         #endregion
         #region COMANDOS
         public ICommand VolverCommand => new Command(async () => await Volver());
         //public ICommand ProcesoSimpCommand => new Command(ProcesoSimple);
+        public ICommand Alertacommand => new Command<Musuarios>(async (p) => await Alerta(p));
         #endregion
     }
 }
