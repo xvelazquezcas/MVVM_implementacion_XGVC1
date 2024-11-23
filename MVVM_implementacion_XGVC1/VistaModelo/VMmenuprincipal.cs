@@ -13,13 +13,13 @@ namespace MVVM_implementacion_XGVC1.VistaModelo
     {
         #region VARIABLES
         string _Texto;
-        public List<Mmenuprincipal> listausuarios { get; set; }
+        public List<Mmenuprincipal> listapaginas { get; set; }
         #endregion
         #region CONSTRUCTOR
         public VMmenuprincipal(INavigation navigation)
         {
             Navigation = navigation;
-            MostrarUsuarios();
+            MostrarPaginas();
         }
         #endregion
         #region OBJETOS
@@ -34,25 +34,25 @@ namespace MVVM_implementacion_XGVC1.VistaModelo
         {
             await Navigation.PopAsync();
         }*/
-        public void MostrarUsuarios()
+        public void MostrarPaginas()
         {
-            listausuarios = new List<Mmenuprincipal>
+            listapaginas = new List<Mmenuprincipal>
             {
                new Mmenuprincipal
                {
                    Pagina= "Entry, datepicker, label, navegation",
-                   Icono= "https://i.ibb.co/L5nmRz0/cinco-estrellas.png"
+                   Icono= "https://i.ibb.co/sHgsmSn/bonita.png"
 
                },
                new Mmenuprincipal
                {
                    Pagina= "ColectionView sin enlace a Base de datos",
-                   Icono = "https://i.ibb.co/7r5sJ4r/patito-de-goma.png"
+                   Icono = "https://i.ibb.co/VxmMsg6/gengar.png"
                },
                new Mmenuprincipal
                {
                    Pagina = "Crud Pokemon",
-                   Icono = "https://i.ibb.co/wQr5F7x/luna.png"
+                   Icono = "https://i.ibb.co/x8cv5YP/bulba.png"
                }
             };
         }
